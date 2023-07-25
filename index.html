@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simulador de Venta de Viajes</title>
+</head>
+<body>
+  <h1>Simulador de Venta de Viajes</h1>
+
+  <label>Nombre y Apellido:</label>
+  <input type="text" id="nombreApellido">
+  <button onclick="saludar()">Saludar</button>
+  <br><br>
+  <label>Cantidad de pasajeros:</label>
+  <input type="number" id="cantidadPasajeros">
+  <br><br>
+  <label>Elige una provincia:</label>
+  <select id="provinciaSelect">
+    <option value="">Selecciona una provincia</option>
+  </select>
+  <button onclick="calcularPrecio()">Calcular Precio</button>
+  <br><br>
+  <div id="resultado"></div>
+
+  <h2>Carrito de Compras</h2>
+  <ul id="carrito"></ul>
+  <button onclick="comprar()">Comprar</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
